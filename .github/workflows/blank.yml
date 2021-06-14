@@ -19,7 +19,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
-      TESTEOK: ${{ fromJSON(github.event) }}
+      TESTEOK: ${{ github.event.commits }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
